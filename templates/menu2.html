@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Меню піцерії</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Назва піци</th>
+                <th>Опис інгредієнтів</th>
+                <th>Ціна <a href="{{ url_for('menu') }}">
+                <button>Сортувати</button>
+                </a></th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+                <td>Чотири сири</td>
+                <td>Моцарела, горгонзола, пармезан, дорблю</td>
+                <td>160 грн</td>
+            </tr>
+        <tr>
+                <td>Салямі</td>
+                <td>Салямі, моцарела, томатний соус</td>
+                <td>140 грн</td>
+            </tr>
+            <tr>
+                <td>Маргарита</td>
+                <td>Помідори, моцарела, базилік</td>
+                <td>120 грн</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</body>
+</html>
